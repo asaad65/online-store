@@ -1,0 +1,35 @@
+.continerProdacts,
+.ProdactsCatugreGred
+{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    
+    max-width:1400px;
+    margin:auto;
+    column-gap:10px;
+    margin-top:10px;
+    padding-inline: 20px;
+}
+@media (max-width:1170) {
+    .continerProdacts,
+    .ProdactsCatugreGred
+    {
+      grid-template-columns:repeat(3, 1fr);
+    }
+}
+@media (max-width:826px) {
+    .continerProdacts,
+    .ProdactsCatugreGred
+    {
+      grid-template-columns:repeat(2, 1fr);
+       
+    }
+}
+@media (max-width:415px) {
+    .continerProdacts,
+    .ProdactsCatugreGred
+    {
+      grid-template-columns:1fr;
+       
+    }
+}

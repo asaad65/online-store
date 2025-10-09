@@ -1,0 +1,38 @@
+
+.Section{
+
+    display: flex;
+  justify-content: center;
+  align-items: center;
+       width: 150px;
+       background: #fff;
+  height: 150px;
+  border-radius: 50%;
+  border: #ccc 2px solid;
+  text-align: center;
+   transition:all 0.3s;
+    cursor: pointer;
+}
+.Section h4{
+   font-size: 18px;
+   transition:all 0.3s;
+}
+.Section:hover{
+ border: #ddd 2px solid;
+  background: #ff9800;
+  scale: 1.1;
+}
+.Section:hover h4{
+   color: #ffffff;
+}
+.custom-next img,
+.custom-prev img{
+   width: 45px;
+   cursor: pointer;
+}
+@media (max-width:640px) {
+   .Section{
+      width: 100px;
+      height: 100px;
+   }
+}
