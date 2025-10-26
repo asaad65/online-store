@@ -10,7 +10,12 @@ export default function SectionItem({ name, slug, selected , mood }) {
     fontWeight: 'bold',
     boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
     cursor: 'pointer',
-    transition: '0.3s'
+    transition: '0.3s',
+   display: '-webkit-box',
+  WebkitLineClamp: 1,
+  WebkitBoxOrient: 'vertical',
+  overflow: 'hidden',
+  textOverflow: 'ellipsis',
   };
 
   return <p style={ mood == 'SectionPro'?{}:style}>{name}</p>;

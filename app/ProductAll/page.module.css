@@ -21,7 +21,7 @@
        
     }
 }
-@media (max-width:415px) {
+@media (max-width:350px) {
 .contener
     {
       grid-template-columns:1fr;

@@ -75,3 +75,16 @@
  background-color: #ffa319;
  border: 1px solid #ffffff ;
   }
+  @media (max-width:625px) {
+    .product-description{
+      display: none;
+    }
+     .product-title{
+      font-size: 15px;
+         display: -webkit-box;
+    -webkit-line-clamp: 1; 
+     -webkit-box-orient: vertical;
+    overflow: hidden;
+     text-overflow: ellipsis;
+     }
+  }

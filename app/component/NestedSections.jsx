@@ -3,7 +3,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import dynamic from 'next/dynamic';
-
+import '../component_modules/NestedSections.css'
 import 'swiper/css';
 import 'swiper/css/navigation';
 
@@ -41,34 +41,6 @@ export default function Sections() {
     setSectionNamePath(parts[2]);
   }, []);
 
-
-  const buttonStyle = {
-    padding: '10px 15px',
-    fontSize: '18px',
-    background: '#fff',
-    border: '1px solid #aaa',
-    borderRadius: '8px',
-    boxShadow: '0 2px 5px rgba(0,0,0,0.2)',
-    cursor: 'pointer',
-    height:'100%'
-  };
-
-
-  const getSlideStyle = (slug) => ({
-    background: sectionNamePath === slug ? '#ff8c00' : '#fff',
-    color: sectionNamePath === slug ? '#fff' : '#000',
-    padding: '10px',
-    width: '100%',
-    border: '1px solid #ccc',
-    borderRadius: '10px',
-    textAlign: 'center',
-    fontWeight: 'bold',
-    boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
-    cursor: 'pointer',
-    transition: '0.3s'
-
-  });
-
   if(loading) return(<div style={{background:'#ddd',width:'100%',height:'50px',padding:'10px',textAlign:'end'}}>...Loading section</div>)
   if(error) return(<div style={{background:'#ff5b5bff',width:'100%',height:'50px',padding:'10px',textAlign:'end'}}>...An error occurred </div>)
   return (
@@ -85,7 +57,7 @@ export default function Sections() {
           height:'100%'
         }}
       >
-        <button style={buttonStyle}>Previous</button>
+        <button className='buttonStyle'>Previous</button>
       </div>
 
      
@@ -101,7 +73,7 @@ export default function Sections() {
             height:'100%'
         }}
       >
-        <button style={buttonStyle}>Next</button>
+        <button className='buttonStyle'>Next</button>
       </div>
 
   
@@ -111,8 +83,8 @@ export default function Sections() {
             slidesPerView={4}
             spaceBetween={10}
             breakpoints={{
-              0: { slidesPerView: 1, spaceBetween: 10 },
-              376: { slidesPerView: 2, spaceBetween: 10 },
+              0: { slidesPerView: 2, spaceBetween: 10 },
+              376: { slidesPerView: 3, spaceBetween: 10 },
               480: { slidesPerView: 3, spaceBetween: 15 },
               768: { slidesPerView: 5, spaceBetween: 10 },
               1024: { slidesPerView: 7, spaceBetween: 10 },

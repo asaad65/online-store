@@ -1,0 +1,15 @@
+.buttonStyle{
+    padding: 10px 15px;
+    font-size: 18px;
+    background: #fff;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    height:100%;
+}
+@media (max-width:600px) {
+    .buttonStyle{
+        display: none;
+    }
+}
