@@ -16,6 +16,7 @@ const CartSlice = createSlice({
               } else {
                 state.push({ ...newProduct })
                 SetLocalStoreg(state)
+                
               }
         },
         RemoveProduct: (state,action)=>{
@@ -42,3 +43,4 @@ const CartSlice = createSlice({
 })
 export const { AddProduct , RemoveProduct ,UpdateQuantity,clear } = CartSlice.actions
 export default CartSlice.reducer
+

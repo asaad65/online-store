@@ -4,7 +4,7 @@ import NavPar from "./component/NavPar";
 import Foter from "./component/Foter";
 import ReduxProvider from "./reduxProvider";
 import BodyWrapper from "./BodyWrapper";
-
+import AlertTagelPrudact from "./component/AlertTagelPrudact";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -38,6 +38,7 @@ export default function RootLayout({ children }) {
               <NavPar />
               <main style={{ flex: 1 }}>{children}</main>
               <Foter />
+              <AlertTagelPrudact/>
             </div>
           </BodyWrapper>
         </ReduxProvider>
