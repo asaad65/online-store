@@ -10,23 +10,17 @@
     margin-bottom: 15px;
     padding-inline: 20px;
 }
-@media (max-width:1170) {
-    .continerProdactsSearch
-    {
-      grid-template-columns:repeat(3, 1fr);
-    }
-}
 @media (max-width:826px) {
     .continerProdactsSearch
     {
-      grid-template-columns:repeat(2, 1fr);
+      grid-template-columns:repeat(3, 1fr);
        
     }
 }
-@media (max-width:415px) {
+@media (max-width:450px) {
     .continerProdactsSearch
     {
-      grid-template-columns:1fr;
+      grid-template-columns:repeat(2, 1fr);
        
     }
 }

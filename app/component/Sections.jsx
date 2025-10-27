@@ -28,9 +28,9 @@ export default function Sections(){
     console.log(data)
     return(
           <div style={{position:'relative'}}>
-            <div style={{display:'flex',justifyContent:'space-between',width:'100%',alignItems:'center',position:'absolute'}}>
+            <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',width:'100%',position:'absolute'}}>
                   <div className="custom-prev" ><img src="\icons\arrow_circle_right.svg" alt="Previous" /></div>
-          <div className="custom-next"><img src="\icons\arrow_circle_left.svg" alt="Next" /></div>
+                  <div className="custom-next"><img src="\icons\arrow_circle_left.svg" alt="Next" /></div>
             </div>
           
            <div style={{background:'orange',width:'100%',height:'50px',marginTop:'10px',display:'flex',justifyContent:'center',alignItems:'center',color:'#000', fontSize:'30px'}}>

@@ -23,8 +23,10 @@ export default function ProdactsCatugre({ params }) {
 
   if (isLoading) {
     return (
-      <div style={{ textAlign: 'end',width:'100%', padding: '30px', fontWeight: 'bold' }}>
+      <div style={{direction:'rtl',width:'100vw',display:'flex',alignItems:'center',justifyContent:'center'}}>
+      <div style={{ textAlign: 'end', padding: '30px', fontWeight: 'bold' }}>
        ...Loading products
+      </div>
       </div>
     );
   }

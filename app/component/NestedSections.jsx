@@ -54,7 +54,7 @@ export default function Sections() {
           right: '10px',
           transform: 'translateY(-50%)',
           zIndex: 1000,
-          height:'100%'
+         
         }}
       >
         <button className='buttonStyle'>Previous</button>
@@ -70,7 +70,7 @@ export default function Sections() {
           left: '10px',
           transform: 'translateY(-50%)',
           zIndex: 1000,
-            height:'100%'
+          
         }}
       >
         <button className='buttonStyle'>Next</button>

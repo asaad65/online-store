@@ -9,7 +9,7 @@ const ProductDetilsComponent = dynamic(() => import('@/app/component/ProductDeti
 export default function ProductDetails({ params }) {
   return (
     <>
-      <Suspense fallback={<div style={{background:'#ddd',width:'80%',height:'40px',direction:'ltr',margin:'20px auto',display:'flex',alignItems:'center',justifyContent:'center',color:'#000'}}  >Loading Cart...</div>}>
+      <Suspense fallback={<div style={{background:'#ddd',width:'80%',height:'40px',direction:'ltr',margin:'20px auto',display:'flex',alignItems:'center',justifyContent:'center',color:'#000'}}  >Loading...</div>}>
   <Cart />
 </Suspense>
 
