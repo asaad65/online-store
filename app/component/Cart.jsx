@@ -105,10 +105,11 @@ export default function Cart() {
         <div style={{ display: "flex", alignItems: "center" }}>
           {isLoggedIn ? (
             <button
+            className="LogOutSize"
               style={{
                 background: "red",
                 color: "#fff",
-                padding: "10px 15px",
+               
                 border: "none",
                 borderRadius: "6px",
                 marginRight: "10px",

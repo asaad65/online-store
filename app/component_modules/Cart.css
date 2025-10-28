@@ -78,6 +78,9 @@
     .PLink:hover{
         border-bottom: 2px solid #ffa600;
     }
+    .LogOutSize{
+         padding: 10px 15px;
+    }
     @media (max-width:555px) {
        .contenrProdactCart{
         width: 100%;
@@ -107,3 +110,9 @@
         width: 40px !important;
       }
   }
+    @media (max-width:350px) {
+      .LogOutSize{
+          padding: 7px 10px;
+      } 
+  }
+  
