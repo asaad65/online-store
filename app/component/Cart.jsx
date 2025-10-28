@@ -137,6 +137,7 @@ export default function Cart() {
           )}
 
           <Image
+          className="cartSize"
             src={
               selectMood !== "dark"
                 ? "/icons/shopping_cart_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"

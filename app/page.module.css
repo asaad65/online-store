@@ -132,6 +132,12 @@
   font-size:20px;
  
 }
+.PSize{
+  font-size: 17px;
+}
+.Order{
+   padding: 12px 24px;
+}
 @media (max-width:1085px){
 .imgWidth{
   height: 500px;
@@ -237,6 +243,18 @@
   }
   .hr{
     width: 125px;
+  }
+ 
+}
+@media (max-width:550px) {
+ .H1Size{
+    font-size: 20px;
+  }
+  .PSize{
+     font-size: 12px;
+  }
+  .Order{
+    padding: 8px 17px;
   }
 }
 @media (max-width:444px) {

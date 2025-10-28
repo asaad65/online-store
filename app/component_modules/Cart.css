@@ -50,7 +50,7 @@
         align-items: center; 
     }
     .iconLink{
-        font-size: 28px;
+        font-size: 20px;
         display: none;
          
     }
@@ -98,3 +98,12 @@
         overflow-y: hidden;
         overflow-y: scroll;
     }
+  @media (max-width:433px) {
+        .btn{
+            padding: 7px;
+            font-size: 14px;
+        }
+      .cartSize{
+        width: 40px !important;
+      }
+  }

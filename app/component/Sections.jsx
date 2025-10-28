@@ -44,7 +44,8 @@ export default function Sections(){
   slidesPerView={4}
   spaceBetween={10}
   breakpoints={{
-    0: { slidesPerView: 2, spaceBetween: 10 },
+    0: { slidesPerView: 1, spaceBetween: 5 },
+    300: { slidesPerView: 2, spaceBetween: 10 },
     360: { slidesPerView: 3, spaceBetween: 10 },
     414: { slidesPerView: 3, spaceBetween: 15 },
     480: { slidesPerView: 4, spaceBetween: 15 },

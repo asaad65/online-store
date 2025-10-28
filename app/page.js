@@ -37,10 +37,9 @@ export default  function Home() {
 
 
                   <div style={{color:'#fff', width:'100%', textAlign:'center',marginTop:'40px'}}>
-            <h1 >.We dont sell products, we provide solutions that make a difference</h1>
-            <p style={{
+            <h1 className={styles.H1Size}>.We dont sell products, we provide solutions that make a difference</h1>
+            <p className={styles.PSize} style={{
             color: '#fff',
-            fontSize: '17px',
             marginTop: '15px',
             maxWidth: '600px',
             lineHeight: '1.6',
@@ -51,10 +50,10 @@ export default  function Home() {
 Quality, speed, and ongoing support are the foundation of our business.
             </p>
             <Link href={'/ProductAll'}>
-             <button style={{
+             <button className={styles.Order} style={{
             backgroundColor: '#ff6600',
             color: '#fff',
-            padding: '12px 24px',
+           
             fontSize: '18px',
             border: 'none',
             borderRadius: '6px',

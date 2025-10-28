@@ -16,23 +16,30 @@
    flex-direction: row;
   max-width: 1200px;
 }
-@media (max-width:1170) {
+/* @media (max-width:1170) {
     .continer
     {
       grid-template-columns:repeat(3, 1fr);
     }
-}
+} */
 @media (max-width:826px) {
    .continer
     {
-      grid-template-columns:repeat(2, 1fr);
+      grid-template-columns:repeat(3, 1fr);
         column-gap:5px;
     }
 }
-@media (max-width:382px) {
+@media (max-width:450px) {
     .continer
     {
-      grid-template-columns:1fr;
+      grid-template-columns:repeat(2, 1fr);
+       
+    }
+}
+@media (max-width:340px) {
+    .continer
+    {
+      grid-template-columns:repeat(1, 1fr);
        
     }
 }
