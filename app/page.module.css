@@ -196,6 +196,7 @@
  }
   .contenrSlide{
  max-width: 700px;
+  margin: 40px auto;
   }
  .Icon{
     width: 70px;
@@ -208,6 +209,7 @@
 @media (max-width:734px) {
   .contenrSlide{
  max-width: 600px;
+  margin: 30px auto;
   }
  .Icon{
     width: 50px;
@@ -224,6 +226,7 @@
 @media (max-width:624px) {
   .contenrSlide{
  max-width: 500px;
+  margin: 20px auto;
   }
  .Icon{
     width: 50px;
@@ -236,6 +239,7 @@
 @media (max-width:518px) {
   .contenrSlide{
  max-width: 400px;
+  margin: 15px auto;
   }
  .Icon{
     width: 50px;
@@ -260,6 +264,7 @@
 @media (max-width:444px) {
   .contenrSlide{
  max-width: 350px;
+  margin: 10px auto;
   }
  .Icon{
     width: 50px;
