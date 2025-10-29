@@ -106,7 +106,8 @@ const boxStyle = {
     flexWrap: 'wrap',
     gap: '40px',
     justifyContent: 'center',
-    alignItems: 'flex-start'
+    alignItems: 'flex-start',
+    direction:'ltr'
   }}>
 
     <div style={{ flex: '1 1 300px', maxWidth: '400px' }}>
@@ -120,7 +121,7 @@ const boxStyle = {
     </div>
 
 
-    <div style={{ flex: '1 1 300px', maxWidth: '500px' }}>
+    <div style={{ flex: '1 1 300px', maxWidth: '500px',direction:'ltr' }}>
       <h1 style={{ fontSize: '28px', marginBottom: '10px' }}>{product.title}</h1>
       <p style={{ fontSize: '16px', color: '#555', marginBottom: '20px' }}>
         {product.description}
@@ -153,11 +154,12 @@ const boxStyle = {
 
 
 
-    <div dir="ltr" style={{ display: 'flex', alignItems: 'center', gap: '10px', margin: '20px 0',justifyContent:'end' }}>
-       <label style={{ fontWeight: 'bold' }}>number:</label>
+    <div dir="ltr" style={{ display: 'flex', alignItems: 'center', gap: '10px', margin: '20px 0',justifyContent:'end' ,direction:'rtl'}}>
       <button onClick={() => quantity < product.stock && handleChange(quantity + 1)} style={btnStyle}>+</button>
       <div style={boxStyle}>{quantity}</div>
       <button onClick={() => quantity > product.minimumOrderQuantity && handleChange(quantity - 1)} style={btnStyle}>-</button>
+       <label style={{ fontWeight: 'bold' }}>number:</label>
+
     </div>
       <ProductButtons product={product} quantity={quantity} />
     </div>

@@ -17,7 +17,7 @@
        
     }
 }
-@media (max-width:450px) {
+@media (max-width:480px) {
     .continerProdactsSearch
     {
       grid-template-columns:repeat(2, 1fr);

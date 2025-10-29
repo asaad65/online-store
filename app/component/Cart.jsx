@@ -221,21 +221,24 @@ export default function Cart() {
                   alt={p.title}
                 />
                 <div>
-                  <h4
-                    style={{
-                      fontSize: "16px",
-                      width: "100px",
-                      display: "-webkit-box",
-                      WebkitLineClamp: "2",
-                      WebkitBoxOrient: "vertical",
-                      overflow: "hidden",
-                      color:'#000'
-                    }}
-                  >
-                    {p.title}
-                  </h4>
-                </div>
-                <h5 style={{ color: "#ff9800", fontSize: "18px" }}>{finalPrice}$</h5>
+                  <div className="ResponseCart">
+                      <h4
+                        style={{
+                          fontSize: "16px",
+                          width: "100px",
+                          display: "-webkit-box",
+                          WebkitLineClamp: "2",
+                          WebkitBoxOrient: "vertical",
+                          overflow: "hidden",
+                          color:'#000'
+                        }}
+                      >
+                        {p.title}
+                      </h4>
+                   
+                    <h5 style={{ color: "#ff9800", fontSize: "18px" }}>{finalPrice}$</h5>
+                    </div>
+                  </div>
                 <div>
                   <CountProduct
                     min={p.minimumOrderQuantity}

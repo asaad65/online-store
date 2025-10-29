@@ -17,16 +17,16 @@ export default function ProdactCart({product}){
     </Link>
     <div className="product-info">
        <Link href={`/ProductDetails/${product.id}`} style={{ textDecoration: 'none' }}> 
+       <div className='ProductRespons'>
       <div className="product-title">{product.title}</div>
       <div className="product-description">{product.description}</div>
       <div className="product-price">{finalPrice}$</div>
+      </div>
       </Link>
       <ProductButtons product = {product} />
 
     </div>
-  
-
-         </div>
+ </div>
 
     )
  }

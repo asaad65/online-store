@@ -46,13 +46,14 @@ export default function NavPar() {
 
   return (
     <div
+    className='ResponseNav'
       style={{
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
         backgroundColor: 'orange',
         padding: '10px 15px',
-        height: '60px',
+        
         direction: 'ltr',
         width: '100vw',
         boxSizing: 'border-box',
