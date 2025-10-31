@@ -22,7 +22,6 @@ export default function Sections() {
   const [sectionNamePath, setSectionNamePath] = useState(null);
   const { data, loading,error } = useSelector(state => state.DataSections);
 
-
   useEffect(() => {
     dispatch(fitchSections());
   }, [dispatch]);
@@ -76,7 +75,6 @@ export default function Sections() {
         <button className='buttonStyle'>Next</button>
       </div>
 
-  
       <div style={{ width: '80%', margin: 'auto' }}>
         {swiperReady && (
           <Swiper
